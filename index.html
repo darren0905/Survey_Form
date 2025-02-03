@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please answer the questions below.</p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" type="text" placeholder="Enter your name here" required>
+
+      <label id="email-label" for="email">Email:</label>
+      <input id="email" type="email" placeholder="Enter your email here" required>
+
+      <label id="number-label" for="number">Age:</label>
+      <input id="number" type="number" min="12" max="110" placeholder="Age" required>
+
+      <label id="gender-label" for="dropdown">Gender:</label>
+      <select id="dropdown">
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <label>Role: </label>
+      <label for="student">
+        <input id="student" name="role" type="radio" value="student" class="inline"> Student
+      </label>
+      <label for="educator">
+        <input id="educator" name="role" type="radio" value="educator" class="inline"> Educator
+      </label>
+
+      <label>Describe yourself:</label>
+      <label>
+        <input type="checkbox" name="traits" value="optimistic" class="inline"> Optimistic
+      </label>
+      <label>
+        <input type="checkbox" name="traits" value="kind" class="inline"> Kind
+      </label>
+      <label>
+        <input type="checkbox" name="traits" value="brave" class="inline"> Brave
+      </label>
+
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" placeholder="What do you think about our event?"></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>  
+  </body>
+</html>
